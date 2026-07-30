@@ -245,7 +245,7 @@ Le système est construit sur une architecture modulaire "Secteur", assurant une
 
 ## 📫 Contact & Liens
 
-- **Email**: [evinabarack13@gmail.com]
+- **Email**: [evinajonathan13@gmail.com]
 - **X/Twitter**: [@Jonhywinwood13]
 - **LinkedIn**: [https://www.linkedin.com/in/jonathan-evina-quantum?utm_source=share_via&utm_content=profile&utm_medium=member_android]
 - **ORCID**: [0009-0002-0297-8968](https://orcid.org/0009-0002-0297-8968)
