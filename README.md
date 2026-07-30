@@ -217,10 +217,10 @@ Le système est construit sur une architecture modulaire "Secteur", assurant une
 
 ## 📫 Contact & Liens
 
-- **Email**: [Votre Email Ici]
-- **X/Twitter**: [@VotreUsername]
-- **LinkedIn**: [Votre Profil]
-- **Calendly**: [Prendre RDV]
+- **Email**: [evinabarack13@gmail.com]
+- **X/Twitter**: [@Jonhywinwood13]
+- **LinkedIn**: [https://www.linkedin.com/in/jonathan-evina-quantum?utm_source=share_via&utm_content=profile&utm_medium=member_android]
+- **Calendly**: [Sous demande]
 
 ---
 
