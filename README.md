@@ -46,6 +46,16 @@ Théorie originale de la **Tryperposition** : un cadre unifié où l'Information
 - **Job ID IBM :** `job_ibm_brisbane_a4abd05e31f9`
 - **Job ID Quandela :** `job_quandela_ascella_edd68f057115`
 
+### Identifiants de Projet Tryperposition
+
+| Identifiant | Valeur |
+|-------------|--------|
+| **DOI OSF** | [10.17605/OSF.IO/U4AEK](https://doi.org/10.17605/OSF.IO/U4AEK) |
+| **Certification ZK** | `RISC0_STARK_QPU_VERIFIED` |
+| **Sceau d'engagement** | `0xe169f5b373cb59cc...` |
+| **Job ID IBM** | `job_ibm_brisbane_a4abd05e31f9` |
+| **Job ID Quandela** | `job_quandela_ascella_edd68f057115` |
+
 📄 [Article scientifique complet (Preprint)](./docs/article_tryperposition_qpu_zk.pdf)
 🔐 [Preuve ZK-STARK (JSON vérifiable)](./ecoute/qpu_zk_stark_receipt.json)
 📊 [Données brutes QPU (JSON)](./ecoute/qpu_physical_results_raw.json)
