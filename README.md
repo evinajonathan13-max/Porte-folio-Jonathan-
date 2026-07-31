@@ -237,9 +237,9 @@ Le système est construit sur une architecture modulaire "Secteur", assurant une
 
 ## 🆔 Identifiant ORCID
 
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0002--0297--8968-green?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0002-0297-8968)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0000--4092--5313-green?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0000-4092-5313)
 
-**ORCID :** [0009-0002-0297-8968](https://orcid.org/0009-0002-0297-8968)
+**ORCID :** [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313)
 
 ---
 
@@ -248,7 +248,7 @@ Le système est construit sur une architecture modulaire "Secteur", assurant une
 - **Email**: [evinajonathan13@gmail.com]
 - **X/Twitter**: [@Jonhywinwood13]
 - **LinkedIn**: [https://www.linkedin.com/in/jonathan-evina-quantum?utm_source=share_via&utm_content=profile&utm_medium=member_android]
-- **ORCID**: [0009-0002-0297-8968](https://orcid.org/0009-0002-0297-8968)
+- **ORCID**: [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313)
 - **Calendly**: [Sous demande]
 
 ---
