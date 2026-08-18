@@ -2,10 +2,10 @@
 
 > 📍 Yaoundé, Cameroun · 18 ans · autodidacte
 > **ORCID** [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313)
-> **Preprint** [10.17605/OSF.IO/6JZMB](https://doi.org/10.17605/OSF.IO/6JZMB)
+> **P vs NP** [10.17605/OSF.IO/6JZMB](https://doi.org/10.17605/OSF.IO/6JZMB) · **Tryperposition** [10.17605/OSF.IO/U4AEK](https://doi.org/10.17605/OSF.IO/U4AEK)
 
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--4092--5313-green?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0000-4092-5313)
-[![DOI](https://img.shields.io/badge/DOI-10.17605/OSF.IO/6JZMB-blue?style=for-the-badge)](https://doi.org/10.17605/OSF.IO/6JZMB)
+[![P vs NP](https://img.shields.io/badge/DOI-P%20vs%20NP--10.17605/OSF.IO/6JZMB-blue?style=for-the-badge)](https://doi.org/10.17605/OSF.IO/6JZMB)
 [![QPU](https://img.shields.io/badge/QPU-IBM%20%2B%20Quandela-purple?style=for-the-badge)](https://www.ibm.com/quantum)
 
 > Je conçois des pipelines mêlant IA agentique, physique quantique et cryptographie ZK pour produire des résultats scientifiques **mathématiquement certifiés**. Pas de diplôme : des preuves, des scripts reproductibles et des Job IDs vérifiables.
@@ -71,23 +71,64 @@ Modules spécialisés de l'écosystème RATISS (preuves de concept antérieures)
 
 ## 🔬 Science principale : Tryperposition & Loi LCT
 
-### Loi de Cohérence Topologique (LCT) — figée, falsifiée
+### Loi de Cohérence Topologique (LCT) — figée, falsifiée, non publiée
 
-> **R = P_sig croît avec la cohérence C du milieu, et est invariant sous changement d'énergie.**
-> On certifie le **message** (la forme), pas le **courant** (l'énergie).
-> Règle d'apprentissage : ΔW = η · φ · P_sig · C *(pas de coefficient arbitraire)*
+> ⚠️ La loi LCT n'a **pas de DOI** et n'a jamais été publiée en preprint. Elle est
+> formellement écrite dans le dépôt `RATISS-ODV-AEON/kernel/ttf/lct_law.py` et
+> validée sur QPU — mais elle n'a pas encore de référence citable. Les DOI ci-dessus
+> (6JZMB, U4AEK) concernent **P vs NP** et la **Tryperposition**, pas la LCT.
 
-**Itération honnête** (la force du travail) :
+![Loi LCT — message vs courant](./assets/lct_message_vs_courant.png)
+
+#### Énoncé de la loi
+
+> **R = P_sig croît avec la cohérence C du milieu intriqué, et R est invariant sous changement d'énergie mesurée.**
+> On certifie le **message** (la forme topologique), pas le **courant** (l'énergie qui la porte).
+
+#### Formalisme complet
+
+**Variables** :
+- **R** = grandeur certifiée (l'invariant). **R ≡ P_sig**.
+- **P_sig** = persistance topologique du cycle H1 le plus long (le « signal ») :
+  `P_sig = max{ d − b | (b,d) ∈ Dgm₁, d ≠ ∞, d > b }`
+  où `Dgm₁` est le diagramme de persistance en dimension 1 du complexe de Vietoris-Rips construit sur les landmarks du système.
+- **C** = cohérence du « milieu génial » (l'intrication) : **C = |cos θ|**, où θ = ωt est la phase d'oscillation.
+- **n_cycles** = nombre de cycles H1 éphémères (le « bruit »). C **décroît** avec C — c'est la signature du nettoyage topologique (« l'intrication nettoie la topologie »).
+
+**Loi (formulation finale, après falsification)** :
+```
+R = P_sig
+    (i)  R est monotone croissante en C   →  ∂R/∂C ≥ 0
+    (ii) R est invariante sous l'énergie  →  ∂R/∂E = 0  (E = (t, J))
+```
+
+**Règle d'apprentissage (RLM)** — gouvernée par la loi, sans coefficient arbitraire :
+```
+ΔW = η · φ · P_sig · C
+```
+où η = taux d'apprentissage, φ = phase du milieu génial (porteuse du coupleur λ(t)). La persistance module l'amplitude, la cohérence la confiance, la phase la direction.
+
+**Couplage à la métrique d'Alcubierre (terme Λ_LCT)** :
+```
+G_μν + Λ_LCT_μν = 8πG · T_eff   avec   Λ_LCT ∝ ∇P_sig
+```
+le gradient de persistance agit comme une pression topologique stabilisant le mur de la bulle. Le parent naturel de Λ_LCT est déjà dans l'Hamiltonien TTF : `H_TTF = H_tJ⊗I + I⊗H_Geni + λ(t)·Φ`, avec `Φ = ∇S·∇T·θ(t)`.
+
+#### Itération honnête (la force du travail)
 
 | # | Formulation | Résultat | Pourquoi |
 |---|---|---|---|
-| 1 | R = P_sig / P_noise | ❌ FAIL | cloche non-monotone |
-| 2 | R = 1 − n_noise/n_total | ❌ FAIL | cloche inverse |
+| 1 | R = P_sig / P_noise | ❌ FAIL | cloche non-monotone (max à C≈0.5) |
+| 2 | R = 1 − n_noise/n_total | ❌ FAIL | cloche inverse (le bruit ajoute des cycles longs) |
 | 3 | **R = P_sig** | ✅ **PASS** | Spearman +0.93, monotone |
 
 > Une loi « fabriquée » n'échouerait pas à ses propres tests. 2 formulations sur 3 ont échoué ; seule R = P_sig a survécu.
 
-**Validations** : protéines 4MZI (+0.93), 3KMD (+0.80) · état quantique (+1.000) · QPU IBM (+0.713, 3 runs moyennés) · flux financier (+0.903).
+#### Validations
+- Protéines : 4MZI (Spearman +0.93, invariance ZK CV = 0.0000) · 3KMD (+0.80, CV = 0.0000)
+- État quantique : tomographie exacte +1.000 (P_sig croît de 0.62 à 0.86 quand C : 0 → 1)
+- QPU IBM : monotonie +0.713 (3 runs moyennés) · invariance ZK ✓ (8 jobs traçables)
+- Flux financier : +0.903
 
 ### Noyau topologique universel & Alcubierre
 
@@ -173,9 +214,10 @@ TSP à 200 000 villes en < 50 ms, 93,63 % de conservation structurelle (Betti pr
 
 ## 📚 Publication
 
-- **J. Evina**, *La Loi de Cohérence Topologique : un invariant informationnel mesurable sur QPU*, 2026. DOI [10.17605/OSF.IO/6JZMB](https://doi.org/10.17605/OSF.IO/6JZMB)
+- **J. Evina**, *RATISS V10 AEON PRIME : A Physical Complexity Audit Framework Demonstrating the Physical Impossibility of P = NP*, 2026. DOI [10.17605/OSF.IO/6JZMB](https://doi.org/10.17605/OSF.IO/6JZMB)
 - **J. Evina**, *Preuves physiques et certification ZK-STARK de la théorie de la Tryperposition*, 2026. DOI [10.17605/OSF.IO/U4AEK](https://doi.org/10.17605/OSF.IO/U4AEK)
 - **J. Evina**, *Panthéon 20x : 20 mutants p53 sur QPU*, 2026. DOI [10.17605/OSF.IO/4867H](https://doi.org/10.17605/OSF.IO/4867H)
+- **J. Evina**, *Loi de Cohérence Topologique (LCT)* — loi figée, validée sur QPU, **non publiée en preprint** (pas de DOI). Formalisme : `RATISS-ODV-AEON/kernel/ttf/lct_law.py`.
 
 ---
 
