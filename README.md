@@ -118,6 +118,13 @@ G_μν + Λ_LCT_μν = 8πG · T_eff   avec   Λ_LCT ∝ ∇P_sig
 ```
 le gradient de persistance agit comme une pression topologique stabilisant le mur de la bulle. Le parent naturel de Λ_LCT est déjà dans l'Hamiltonien TTF : `H_TTF = H_tJ⊗I + I⊗H_Geni + λ(t)·Φ`, avec `Φ = ∇S·∇T·θ(t)`.
 
+> 📐 **Dérivation tensorielle 4D complète** (Christoffel → Ricci → Einstein) :
+> [`warp/docs/EINSTEIN_4D_DERIVATION.md`](./warp/docs/EINSTEIN_4D_DERIVATION.md).
+> Exotic matter confirmée (G_11 = 3v²(-(y²+z²))(f')² < 0). Résultat honnête :
+> aucun des 3 ansatz de Λ_LCT ne compense directement l'exotic matter (Λ_00 ≤ 0),
+> ce qui explique la réduction faible (3.9%). La limite théorique #2 est **résolue**
+> — et révèle que la compensation naive ne marche pas (ouverture vers un 4e ansatz).
+
 #### Itération honnête (la force du travail)
 
 | # | Formulation | Résultat | Pourquoi |
