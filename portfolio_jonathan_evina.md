@@ -1,74 +1,63 @@
-# Jonathan Evina - Portfolio Professionnel
+# Jonathan Evina — Portfolio
 
-## Ingénieur Logiciel & Chercheur en IA
-
---- 
-
-### Contact
-
--   **Localisation**: Yaoundé, Cameroun
--   **GitHub**: [bridejackson137-svg/jonathan-evina-professional-portfolio](https://github.com/bridejackson137-svg/jonathan-evina-professional-portfolio)
+> 📍 Yaoundé, Cameroun · 18 ans · autodidacte
+> **ORCID** [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313)
+> **Preprint** [10.17605/OSF.IO/6JZMB](https://doi.org/10.17605/OSF.IO/6JZMB)
 
 ---
 
-## Présentation
+## 👋 Présentation
 
-Développeur passionné de 18 ans, spécialisé dans l'analyse médicale ultra-performante et l'intelligence computationnelle. Créateur de **RATISS (Real-time Analysis & Topological Intelligence for Scientific Systems)**, un cadre analytique innovant pour résoudre des problèmes combinatoires complexes et garantir des résultats sans hallucination dans la recherche scientifique basée sur l'IA. Mon travail démontre une maîtrise de l'ingénierie logicielle de haut niveau et de la modélisation mathématique.
+Chercheur en physique computationnelle et architecte de systèmes. Créateur de
+**RATISS** — l'architecture agentique souveraine qui a permis de découvrir et
+valider la **Loi de Cohérence Topologique (LCT)**, appliquée à l'effondrement
+des trous noirs et à la métrique d'Alcubierre.
 
----
+Pas de diplôme : des preuves, des scripts reproductibles et des Job IDs QPU
+vérifiables sur [ibm.com/quantum](https://www.ibm.com/quantum).
 
-## Compétences Clés
-
--   **Développement Logiciel**: Python (Expert), Cypher, Shell
--   **Mathématiques Appliquées**: Topologie, Théorie des Graphes, Théorie de la Complexité (P vs NP)
--   **Intelligence Artificielle**: UMAP, Orchestration LLM, Ingénierie des Prompts, Anti-Hallucination
--   **Bioinformatique**: Traitement PDB, Simulation Biophysique, Visualisation de Données
-
----
-
-## Projets Phares: RATISS
-
-### Mission
-
-RATISS vise à fournir une analyse médicale ultra-profonde et à résoudre des problèmes complexes avec une fiabilité inégalée, en particulier dans les domaines où les erreurs d'IA peuvent avoir des conséquences critiques.
-
-### Problèmes Résolus
-
--   **Maîtrise Anti-Hallucination**: Élimination des erreurs d'IA dans l'interprétation des données médicales.
--   **Compression Topologique**: Gestion de datasets massifs (200 000+ nœuds) avec >94% de conservation structurelle.
--   **Red-Teaming P vs NP**: Audit de preuves mathématiques contre des barrières théoriques.
--   **Validation Biophysique**: Analyse structurelle en temps réel de protéines (ex: p53).
-
-### Résultats Notables
-
--   **Optimisation Planétaire**: Résolution de problèmes TSP à 200 000 villes en < 50ms avec 93.63% de conservation.
--   **Validation Médicale**: Identification d'anomalies de liaison du zinc et de points chauds du cancer sur la protéine p53 avec 100% de corrélation biophysique.
-
-Pour des détails et preuves complètes, visitez le dépôt GitHub.
+> 📖 **Portfolio complet** : voir le [README principal](./README.md)
+> 🌐 **Site scientifique illustré (live)** : https://evinajonathan13-max.github.io/scientist-research-/
 
 ---
 
-## Preuves & Documentation
+## 🗺️ Carte des dépôts
 
--   **Dépôt GitHub**: [Accéder au dépôt](https://github.com/bridejackson137-svg/jonathan-evina-professional-portfolio)
--   **Certificat de Validation Finale**: [Voir le fichier JSON](https://github.com/bridejackson137-svg/jonathan-evina-professional-portfolio/blob/main/results/FINAL_VALIDATION_CERTIFICATE.json)
--   **Documentation Technique**: [Fichiers PDF et Markdown](https://github.com/bridejackson137-svg/jonathan-evina-professional-portfolio/tree/main/docs)
--   **Codes Sources**: [Répertoire `src/`](https://github.com/bridejackson137-svg/jonathan-evina-professional-portfolio/tree/main/src)
+### Compte principal : [`evinajonathan13-max`](https://github.com/evinajonathan13-max)
+| Dépôt | Rôle |
+|---|---|
+| [scientist-research-](https://github.com/evinajonathan13-max/scientist-research-) | Site scientifique (trous noirs, Alcubierre, LCT) — [live](https://evinajonathan13-max.github.io/scientist-research-/) |
+| [RATISS-ODV-AEON](https://github.com/evinajonathan13-max/RATISS-ODV-AEON) | Moteur topologique pur (TTF-Compute) — privé |
+| [Ratiss-experimental-IA-](https://github.com/evinajonathan13-max/Ratiss-experimental-IA-) | RATIS-Net (LCT + émotions) — privé |
+| [robot-Ratiss-](https://github.com/evinajonathan13-max/robot-Ratiss-) | Robot téléphone souverain — privé |
+| [Ratiss-Fusion-stark-](https://github.com/evinajonathan13-max/Ratiss-Fusion-stark-) | Fusion RATIS × Needle/Qwen — privé |
+| [RATISS-V10-Physical-Complexity-Audit](https://github.com/evinajonathan13-max/RATISS-V10-Physical-Complexity-Audit) | Audit complexité physique (P vs NP) |
+| [ratiss-aeon-agent](https://github.com/evinajonathan13-max/ratiss-aeon-agent) | Agent AEON (UI + cerveau) |
+| [Naomi-Ia-](https://github.com/evinajonathan13-max/Naomi-Ia-) | Assistant IA Naomi |
+
+### Compte secondaire : [`bridejackson137-svg`](https://github.com/bridejackson137-svg)
+| Dépôt | Rôle |
+|---|---|
+| [Crypto-VOLT-v2](https://github.com/bridejackson137-svg/Crypto-VOLT-v2) | Crypto post-quantique — [démo](https://crypto-volt-v2.netlify.app) |
+| [RATISS-Neuralink-POC](https://github.com/bridejackson137-svg/RATISS-Neuralink-POC) | Décodage neuronal < 5 ms |
+| [RATISS-Cypher-ODV](https://github.com/bridejackson137-svg/RATISS-Cypher-ODV) | Validation médicale & anti-hallucination |
+| [RATISS-Pro](https://github.com/bridejackson137-svg/RATISS-Pro) | Portfolio d'analyse médicale |
+| [jonathan-evina-professional-portfolio](https://github.com/bridejackson137-svg/jonathan-evina-professional-portfolio) | Red-teaming P vs NP |
+| VOLT Explorer | Visualisation ZK — [démo live](https://volt-explorer-standalone.netlify.app) |
+| VOLT Compare | RSA vs VOLT — [démo live](https://volt-compare-standalone.netlify.app) |
+| p53-MVS | Photoactivation p53-R249S — [démo live](https://p53-mvs-365nm.netlify.app) |
 
 ---
 
-## Modules Spécialisés (Écosystème RATISS)
+## 📫 Contact
 
-| Module | Rôle Industriel | Statut |
-|--------|----------------|--------|
-| **Crypto-VOLT-v2** | Sécurité Post-Quantum + Preuves ZK CPU-Only | [GitHub](https://github.com/bridejackson137-svg/Crypto-VOLT-v2) · [Demo](https://crypto-volt-v2.netlify.app) · ✅ Audité |
-| **RATISS Neuralink-POC** | Décodage Neuronal Temps Réel < 5ms CPU-Only | [GitHub](https://github.com/bridejackson137-svg/RATISS-Neuralink-POC) · ⚙️ POC Simulé |
-| **VOLT Explorer** | Visualisation Interactive Preuves TopoZK | [GitHub](https://github.com/bridejackson137-svg/volt-explorer) · [Demo](https://volt-explorer-standalone.netlify.app) · 🖥️ Live |
-| **VOLT Compare** | Comparaison RSA-2048 vs VOLT Post-Quantique | [GitHub](https://github.com/bridejackson137-svg/volt-compare-standalone) · [Demo](https://volt-compare-standalone.netlify.app) · 📊 Reproductible |
-| **p53-MVS** | Science Ouverte — Photoactivation p53-R249S à 365nm | [GitHub](https://github.com/bridejackson137-svg/p53-mvs-365nm) · [Site](https://p53-mvs-365nm.netlify.app) · 🔬 MVS Protocol |
+- 📧 [evinajonathan13@gmail.com](mailto:evinajonathan13@gmail.com)
+- 🐦 [@Jonhywinwood13](https://twitter.com/Jonhywinwood13)
+- 💼 [LinkedIn](https://www.linkedin.com/in/jonathan-evina-quantum)
+- 🔬 ORCID : [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313)
 
 ---
-
-## Devise
 
 *"Le code est la preuve ultime de la pensée."*
+
+*© 2026 JOHNKING0 & Jonathan Evina. Loi LCT figée.*

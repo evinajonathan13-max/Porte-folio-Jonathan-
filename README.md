@@ -1,264 +1,182 @@
-# 🌟 Quantum Complexity Architect | Physique des Systèmes Complexes Hybrides
+# Jonathan Evina — Architecte de systèmes, chercheur en physique computationnelle
 
-> **Je conçois des pipelines mêlant IA agentique, physique quantique et cryptographie ZK pour produire des résultats scientifiques mathématiquement certifiés.**
->
-> 📍 Cameroun · 18 ans · Autodidacte · Transdisciplinaire
+> 📍 Yaoundé, Cameroun · 18 ans · autodidacte
+> **ORCID** [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313)
+> **Preprint** [10.17605/OSF.IO/6JZMB](https://doi.org/10.17605/OSF.IO/6JZMB)
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Quantum](https://img.shields.io/badge/Quantum-Computing-purple.svg?style=for-the-badge)](https://github.com/topics/quantum-computing)
-[![ZK-STARK](https://img.shields.io/badge/ZK--STARK-Cryptography-black.svg?style=for-the-badge)](https://github.com/topics/zero-knowledge-proofs)
-[![Cameroun](https://img.shields.io/badge/Location-Yaoundé%2C%20Cameroun-orange.svg?style=for-the-badge)](https://en.wikipedia.org/wiki/Yaound%C3%A9)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0000--4092--5313-green?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0000-4092-5313)
+[![DOI](https://img.shields.io/badge/DOI-10.17605/OSF.IO/6JZMB-blue?style=for-the-badge)](https://doi.org/10.17605/OSF.IO/6JZMB)
+[![QPU](https://img.shields.io/badge/QPU-IBM%20%2B%20Quandela-purple?style=for-the-badge)](https://www.ibm.com/quantum)
+
+> Je conçois des pipelines mêlant IA agentique, physique quantique et cryptographie ZK pour produire des résultats scientifiques **mathématiquement certifiés**. Pas de diplôme : des preuves, des scripts reproductibles et des Job IDs vérifiables.
 
 ---
 
-## 🧬 Projet Phare : Tryperposition — Validation QPU & Certification ZK-STARK
+## 🧭 Le fil rouge : un système, une loi, une application
 
-**Statut :** ✅ Validé sur QPU Physiques Réels — Juillet 2026
+Je ne présente pas trois projets séparés. J'en raconte **un seul** :
 
-### La Théorie
-Théorie originale de la **Tryperposition** : un cadre unifié où l'Information, le Quantique et la Matière sont couplés en temps réel via une abscisse stable oscillant entre cohérence (-1) et décohérence (+1). Le temps n'est pas une dimension fondamentale mais un flux thermodynamique émergent.
+```
+RATISS (le système agentique)
+   └─► a permis de découvrir et valider la Loi LCT (loi figée, falsifiée)
+         └─► appliquée à l'effondrement des trous noirs et à la métrique d'Alcubierre
+```
 
-### Le Pipeline (Architecture RATISS V9 Aeon Prime)
-| Composant | Technologie |
-|-----------|-------------|
-| Solveur quantique | Diagonalisation exacte Lanczos — Modèle t-J, réseau 6×6 (36 sites) |
-| Solveur topologique | Homologie persistante GUDHI — Nombres de Betti |
-| Connecteurs QPU | IBM Quantum Brisbane (127 qubits supraconducteurs) + Quandela Ascella (photonique) |
-| Moteur ZK | RISC Zero — Preuves STARK à divulgation nulle |
-| Orchestration | Agent autonome RATISS Cypher ODV (anti-hallucination) |
+| Couche | Ce que c'est | Preuve traçable |
+|---|---|---|
+| **1. RATISS** | Architecture agentique souveraine (cerveau topologique + ZK + anti-hallucination) | 8 jobs QPU traçables |
+| **2. Loi LCT** | R = P_sig croît avec la cohérence C, invariant sous énergie | Falsifiée (2 formulations sur 3 ont échoué), Spearman +0.93 |
+| **3. Warp & trous noirs** | Noyau universel P_sig ≈ 1.80 + terme Λ_LCT | Site scientifique illustré live ↓ |
 
-### Résultats Clés Validés
-| Métrique | Valeur | Plateforme |
-|----------|--------|------------|
-| Énergie fondamentale | -0.532147 t | Lanczos ED (Local) |
-| Gap de spin | 0.0184 t | Lanczos ED (Local) |
-| Appariement d-wave | 0.0833 | Lanczos ED (Local) |
-| Fidélité Bell (|Φ+⟩) | 95.40% | IBM Brisbane QPU |
-| Visibilité HOM | 96.20% | Quandela Ascella QPU |
-| Point Tryperposition | φ ≈ -0.0029 | Pipeline complet |
-| Convergence | TRYPERPOSITION_VERIFIED | Abscisse stable atteinte |
+🌐 **Site scientifique illustré (live)** : https://evinajonathan13-max.github.io/scientist-research-/
+*(13 figures, section « Pour les sceptiques », Job IDs vérifiables sur ibm.com/quantum)*
 
-### Certification Cryptographique & Traçabilité
-- **Type :** ZK-STARK (RISC Zero)
-- **Statut :** `RISC0_STARK_QPU_VERIFIED`
-- **Temps de vérification :** 27 ms
-- **Sceau d'engagement :** `0xe169f5b373cb59cc...`
-- **Job ID IBM :** `job_ibm_brisbane_a4abd05e31f9`
-- **Job ID Quandela :** `job_quandela_ascella_edd68f057115`
+---
 
-### Identifiants de Projet Tryperposition
+## 🗺️ Carte des dépôts — la porte d'entrée unique
+
+Tout mon travail est réparti sur deux comptes GitHub. Voici où aller pour quoi.
+
+### Compte principal : [`evinajonathan13-max`](https://github.com/evinajonathan13-max)
+
+| Dépôt | Rôle | Lien |
+|---|---|---|
+| **scientist-research-** | Site scientifique illustré (trous noirs, Alcubierre, LCT) | [repo](https://github.com/evinajonathan13-max/scientist-research-) · [site live](https://evinajonathan13-max.github.io/scientist-research-/) |
+| **RATISS-ODV-AEON** | Moteur topologique pur (TTF-Compute, cerveau de tout le système) — *privé* | [repo](https://github.com/evinajonathan13-max/RATISS-ODV-AEON) |
+| **Ratiss-experimental-IA-** | RATIS-Net : applique la loi LCT au langage + émotions (ETH) — *privé* | [repo](https://github.com/evinajonathan13-max/Ratiss-experimental-IA-) |
+| **robot-Ratiss-** | Robot téléphone souverain (cerveau LCT sur LeRobot) — *privé* | [repo](https://github.com/evinajonathan13-max/robot-Ratiss-) |
+| **Ratiss-Fusion-stark-** | Fusion symbiotique RATIS-Net × Needle/Qwen — *privé* | [repo](https://github.com/evinajonathan13-max/Ratiss-Fusion-stark-) |
+| **RATISS-V10-Physical-Complexity-Audit** | Audit de complexité physique (P vs NP, red-team) | [repo](https://github.com/evinajonathan13-max/RATISS-V10-Physical-Complexity-Audit) |
+| **ratiss-aeon-agent** | Agent AEON (UI React/FastAPI + cerveau) | [repo](https://github.com/evinajonathan13-max/ratiss-aeon-agent) |
+| **Naomi-Ia-** | Assistant IA (Naomi) | [repo](https://github.com/evinajonathan13-max/Naomi-Ia-) |
+
+> ℹ️ Les dépôts marqués *privé* contiennent la propriété intellectuelle du cerveau RATISS. Le code scientifique reproductible est dans `scientist-research-` (public) et le moteur TTF est clonable sur demande.
+
+### Compte secondaire : [`bridejackson137-svg`](https://github.com/bridejackson137-svg)
+
+Modules spécialisés de l'écosystème RATISS (preuves de concept antérieures) :
+
+| Dépôt | Rôle | Lien |
+|---|---|---|
+| **Crypto-VOLT-v2** | Cryptographie post-quantique (47 GB/s, résistance side-channel) | [repo](https://github.com/bridejackson137-svg/Crypto-VOLT-v2) · [démo](https://crypto-volt-v2.netlify.app) |
+| **RATISS-Neuralink-POC** | Décodage neuronal temps réel < 5 ms (CPU-only) | [repo](https://github.com/bridejackson137-svg/RATISS-Neuralink-POC) |
+| **RATISS-Cypher-ODV** | Validation médicale & anti-hallucination | [repo](https://github.com/bridejackson137-svg/RATISS-Cypher-ODV) |
+| **RATISS-Pro** | Portfolio d'analyse médicale professionnelle | [repo](https://github.com/bridejackson137-svg/RATISS-Pro) |
+| **jonathan-evina-professional-portfolio** | Red-teaming P vs NP (audit de preuves candidates) | [repo](https://github.com/bridejackson137-svg/jonathan-evina-professional-portfolio) |
+| **VOLT Explorer** | Visualisation des preuves ZK | [démo live](https://volt-explorer-standalone.netlify.app) |
+| **VOLT Compare** | RSA-2048 vs VOLT post-quantique | [démo live](https://volt-compare-standalone.netlify.app) |
+| **p53-MVS** | Photoactivation p53-R249S à 365 nm | [démo live](https://p53-mvs-365nm.netlify.app) |
+
+---
+
+## 🔬 Science principale : Tryperposition & Loi LCT
+
+### Loi de Cohérence Topologique (LCT) — figée, falsifiée
+
+> **R = P_sig croît avec la cohérence C du milieu, et est invariant sous changement d'énergie.**
+> On certifie le **message** (la forme), pas le **courant** (l'énergie).
+> Règle d'apprentissage : ΔW = η · φ · P_sig · C *(pas de coefficient arbitraire)*
+
+**Itération honnête** (la force du travail) :
+
+| # | Formulation | Résultat | Pourquoi |
+|---|---|---|---|
+| 1 | R = P_sig / P_noise | ❌ FAIL | cloche non-monotone |
+| 2 | R = 1 − n_noise/n_total | ❌ FAIL | cloche inverse |
+| 3 | **R = P_sig** | ✅ **PASS** | Spearman +0.93, monotone |
+
+> Une loi « fabriquée » n'échouerait pas à ses propres tests. 2 formulations sur 3 ont échoué ; seule R = P_sig a survécu.
+
+**Validations** : protéines 4MZI (+0.93), 3KMD (+0.80) · état quantique (+1.000) · QPU IBM (+0.713, 3 runs moyennés) · flux financier (+0.903).
+
+### Noyau topologique universel & Alcubierre
+
+Sous effondrement, **trois étoiles radicalement différentes convergent** vers le même noyau invariant (P_sig ≈ 1.80, CV = 1.6%). L'entropie de von Neumann reste **invariante** (CV = 0.0%) sur QPU physique sous changement d'énergie. Ce mécanisme, reproduit de façon contrôlée, devient le mur d'une bulle de warp stabilisée par le terme **Λ_LCT ∝ ∇P_sig**.
+
+→ Détails illustrés sur le [site scientifique live](https://evinajonathan13-max.github.io/scientist-research-/).
+
+### Théorie de la Tryperposition (cadre mère)
+
+Cadre unifié où l'Information, le Quantique et la Matière sont couplés via une abscisse stable oscillant entre cohérence (−1) et décohérence (+1). Le temps n'est pas une dimension fondamentale mais un flux thermodynamique émergent.
 
 | Identifiant | Valeur |
-|-------------|--------|
+|---|---|
 | **DOI OSF** | [10.17605/OSF.IO/U4AEK](https://doi.org/10.17605/OSF.IO/U4AEK) |
-| **Certification ZK** | `RISC0_STARK_QPU_VERIFIED` |
-| **Sceau d'engagement** | `0xe169f5b373cb59cc...` |
-| **Job ID IBM** | `job_ibm_brisbane_a4abd05e31f9` |
-| **Job ID Quandela** | `job_quandela_ascella_edd68f057115` |
+| Certification ZK | `RISC0_STARK_QPU_VERIFIED` |
+| Sceau d'engagement | `0xe169f5b373cb59cc...` |
+| Job ID IBM | `job_ibm_brisbane_a4abd05e31f9` |
+| Job ID Quandela | `job_quandela_ascella_edd68f057115` |
 
-📄 [Article scientifique complet (Preprint)](./docs/article_tryperposition_qpu_zk.pdf)
-🔐 [Preuve ZK-STARK (JSON vérifiable)](./ecoute/qpu_zk_stark_receipt.json)
-📊 [Données brutes QPU (JSON)](./ecoute/qpu_physical_results_raw.json)
-📋 [Rapport comparatif Théorie vs QPU (JSON)](./ecoute/compare_theory_vs_qpu_report.json)
+📄 [Article scientifique (preprint)](./docs/article_tryperposition_qpu_zk.pdf) · 🔐 [Preuve ZK-STARK](./ecoute/qpu_zk_stark_receipt.json) · 📊 [Données QPU brutes](./ecoute/qpu_physical_results_raw.json)
 
 ---
 
-## 🧬 Projet Panthéon 20x — 20 Mutants p53 sur QPUs Physiques
+## 🧪 Applications validées (écosystème RATISS)
 
-**Statut :** ✅ Validé & Certifié ZK-STARK — Juillet 2026
+### Panthéon 20x — 20 mutants p53 sur QPU physiques
+Mapping t-J de 20 mutants de p53 (« gardien du génome ») sur IBM Brisbane + Quandela Ascella, certifié ZK-STARK. Écart moyen Théorie/QPU : 1,22 %.
+DOI : [10.17605/OSF.IO/4867H](https://doi.org/10.17605/OSF.IO/4867H) · Cibles identifiées : Y220C (stabilisateurs COTI-2), P151S (chaperons métalliques).
 
-Ce projet constitue la **preuve de principe** du cadre Tryperposition appliqué à la modélisation quantique de 20 mutants de la protéine p53 (le "gardien du génome"). Le mapping Hamiltonien t-J, dérivé des structures cristallines PDB, a été synthétisé sur deux plateformes quantiques physiques : **IBM Brisbane** (127 qubits supraconducteurs, topologie Heavy-Hex) et **Quandela Ascella** (6 modes photoniques, détecteurs SNSPD).
+### Biophysique — protéine p53 (PDB: 2OCJ)
+Validation de la géométrie tétraédrique du Zn²⁺ (Cys176, His179, Cys238, Cys242, ~2.52 Å), détection des hotspots cancéreux (Arg175, Arg248, Arg273), corrélation 100 % avec ClinVar/Fersht. 7 figures reproductibles.
 
-L'ensemble du registre de données et des invariants logiques a été certifié par des preuves cryptographiques **ZK-STARK** via la machine virtuelle RISC Zero (zkVM), garantissant l'intégrité de la chaîne de mesure de bout en bout.
+### Anti-hallucination (Secteur 5)
+Système IA agentique refusant les fausses prémisses : **100/100 tests adversariaux refusés** (taux 100 %). Borne inférieure de Wilson 99,9 % : 96,38 %. Preuve ZK 2.3 KB post-quantique.
 
-### Résultats Clés
+### Compression topologique (Planetary Solver)
+TSP à 200 000 villes en < 50 ms, 93,63 % de conservation structurelle (Betti préservés), Peak RSS 450 MB.
 
-| Métrique | Valeur |
-|----------|--------|
-| Écart moyen Théorie / QPU | 1,22 % |
-| Écart maximum | 2,90 % (R213* tronqué) |
-| Fidélité Bell moyenne (IBM) | 95,22 % |
-| Visibilité HOM moyenne (Quandela) | 96,24 % |
-| Certification ZK | `RISC0_STARK_PANTHEON_20X_VERIFIED` |
-| Racine BLAKE3 | `0x91d83e201f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c` |
-
-### Cibles de Drug Design Identifiées
-
-| Variant | Type | Signature | Potentiel thérapeutique |
-|---------|------|-----------|------------------------|
-| **Y220C** (MUT_03) | Crevice hydrophobe | H1=5, H2=2 | Stabilisateurs type COTI-2 |
-| **P151S** (MUT_10) | Puits métastable | H1=8, H2=1 | Chaperons métalliques |
-
-### Identifiants de Projet
-
-| Identifiant | Valeur |
-|-------------|--------|
-| **DOI OSF** | [10.17605/OSF.IO/4867H](https://doi.org/10.17605/OSF.IO/4867H) |
-| **Certification ZK** | `RISC0_STARK_PANTHEON_20X_VERIFIED` |
-| **Racine BLAKE3** | `0x91d83e201f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c` |
-| **Job IDs IBM** | 20 sessions (voir `data/job_ids_and_zk_receipts.json`) |
-| **Job IDs Quandela** | 20 sessions (voir `data/job_ids_and_zk_receipts.json`) |
-
-### Contenu du dossier `pantheon_20x/`
-
-- `preprint_final.pdf` — Article scientifique principal (Preuve de Principe)
-- `companion_final.pdf` — Document compagnon méthodologique
-- `notebook_v2/` — Pipeline d'analyse exécutable (IPYNB, PDF, HTML, Markdown)
-- `data/` — Matrice des 20 variants, Job IDs IBM/Quandela, reçus ZK-STARK, empreintes BLAKE3
-
----
-
-## 🧪 Résultats Concrets & Benchmarks Vérifiables
-
-Au-delà de la physique quantique, l'écosystème RATISS produit des résultats mesurables et auditables sur plusieurs fronts critiques.
-
-### 1. Validation Biophysique : Protéine p53 (Tumeur)
-Analyse structurelle complète du domaine central de la protéine p53 (PDB: 2OCJ), un suppresseur de tumeur majeur.
-- **Coordination du Zinc (Zn²⁺)** : Validation de la géométrie tétraédrique avec les résidus Cys176, His179, Cys238 et Cys242. Distances mesurées ~2.52–2.53 Å, parfaitement conformes aux données biophysiques.
-- **Identification des Hotspots** : Détection précise des points chauds de mutations cancéreuses (Arg175, Arg248, Arg273, Gly245, Arg249).
-- **Corrélation Clinique** : Probabilité de repliement (P_native < 0.1, plage 0.03–0.08) pour la mutation R175H. Résultat vérifié avec 100% de corrélation face aux bases de données ClinVar Pathogenic et aux données thermodynamiques de Fersht.
-- **Artefacts** : 7 figures générées (Tétramère, Monomère, Site Zinc, Hotspots, B-Factor, Contacts, Ramachandran) et scripts Python reproductibles (`verify_zn.py`, `verify_contacts.py`).
-
-### 2. Système Anti-Hallucination (Secteur 5 — Paranoia Max)
-Validation d'un système d'IA agentique capable de refuser les fausses prémisses.
-- **Benchmark Adversarial** : 100 tests piégés répartis en 4 batches (entités fictives, hallucinations PDB, violations physiques, injections).
-- **Résultat** : **100/100 refusés** (Taux de refus de 100.0000%).
-- **Statistiques** : Borne inférieure de Wilson à 99.9% : 96.38%. Tolérance aux pannes : ZÉRO.
-- **Preuve ZK** : Taille de preuve 2.3 KB (compressée), compatible Post-Quantum.
-- **Modèles testés** : Nemotron 3 Ultra, Nemotron Nano 9B, Gemma 4 26B (Score initial 29/30, passé à 30/30 après patch).
-
-### 3. Compression Topologique (Planetary Solver)
-Optimisation massive de données complexes via réduction de dimensionnalité topologique.
-- **Échelle** : Traitement de graphes de plus de 200 000 nœuds.
-- **Performance** : Résolution de problèmes TSP (Voyageur de commerce) à 200 000 villes en moins de 50 ms.
-- **Efficience** : 93.63% de conservation structurelle (Nombres de Betti préservés) avec une empreinte mémoire maîtrisée (Peak RSS : 450 MB, < 2GB pour 10 millions de variantes).
-
-### 4. Cryptographie Post-Quantique (VOLT v2.1.0-Hardened)
-Audits de sécurité et benchmarks sur des algorithmes cryptographiques avancés.
-- **Vitesse** : 47 GB/s en chiffrement, 42 GB/s en déchiffrement.
-- **Sécurité** : Résistance aux attaques par canaux auxiliaires (Side-Channel). Aucune fuite statistique détectée sur plus de 70 millions de traces combinées (|t| < 0.25).
-- **Analyse Kyber768** : Documentation d'une attaque par injection d'indices (hints). L'avantage sur la supposition aléatoire reste inférieur à 2^-40, confirmant la marge de sécurité théorique de 1414 bits.
-
----
-
-## 👋 À propos
-
-Je m'appelle Jonathan Evina. J'ai 18 ans. Je suis autodidacte, basé au Cameroun. Mon domaine est la **physique des systèmes complexes hybrides** — je construis des pipelines qui connectent l'intelligence artificielle, la physique quantique et la cryptographie pour produire des résultats scientifiques mathématiquement certifiés.
-
-En 6 mois, depuis un téléphone portable avec une connexion instable, j'ai :
-- Conçu **RATISS V9 Aeon Prime**, une architecture agentique qui élimine les hallucinations des LLM (100% de refus sur 100 tests adversariaux)
-- Développé la théorie de la **Tryperposition** (Information ↔ Quantique ↔ Matière) et la validée sur de vrais processeurs quantiques (IBM & Quandela)
-- Analysé structurellement la protéine suppresseur de tumeur **p53** avec 100% de corrélation biophysique
-- Obtenu une **certification ZK-STARK** (RISC Zero) de mes résultats scientifiques
-
-Je n'ai pas de diplôme. J'ai des preuves mathématiques, des scripts reproductibles et des Job IDs vérifiables.
-
-🎯 **Objectif :** Repousser les frontières de la science computationnelle certifiée, depuis l'Afrique, avec les outils du XXIe siècle.
-
-📧 [Email] · 🐦 [X/Twitter] · 💼 [LinkedIn] · 📅 [Prendre rendez-vous]
-
----
-
-## 🛠️ Compétences techniques
-
-### Physique Quantique & Calcul Scientifique
-- Diagonalisation exacte (Lanczos, modèles t-J et Hubbard)
-- QPU physiques : IBM Quantum (Heavy-Hex 127 qubits), Quandela (Photonique Ascella)
-- Simulateurs quantiques : Qiskit, PennyLane, Perceval
-- Topologie computationnelle : GUDHI, Homologie persistante, Ricci Flow
-
-### Cryptographie & Preuves Formelles
-- ZK-STARK (RISC Zero) — Génération et vérification de preuves
-- Chaînes de confiance cryptographique (SHA256, BLAKE2b)
-- Sceaux d'engagement et certification de résultats scientifiques
-- Cryptographie post-quantique (VOLT, Kyber, ChaCha20)
-
-### IA Agentique & Systèmes Cognitifs
-- Conception de pipelines LLM anti-hallucination (Taux de refus 100%)
-- Orchestration multi-agents (Architecture RATISS)
-- Contraintes physiques formelles (Vectors QM 001-004)
-
-### Langages & Outils
-- **Langages**: Python (Expert), LaTeX, Circom, Rust (notions), Solidity (notions), Cypher, Shell
-- **Mathématiques**: Topologie, Théorie des Graphes, Théorie de la Complexité (P vs NP)
-- **IA/ML**: UMAP, Orchestration LLM, Ingénierie des Prompts
-- **Scientifique**: Traitement PDB, Simulation Biophysique, Visualisation de Données (Matplotlib, 3D)
-
----
-
-## 📂 Projets (Écosystème RATISS)
-
-### 🚀 Mission: RATISS (Real-time Analysis & Topological Intelligence for Scientific Systems)
-
-**RATISS** est un cadre analytique de pointe conçu pour l'analyse médicale approfondie, la résolution de problèmes combinatoires complexes et la garantie de résultats sans hallucination dans la recherche scientifique basée sur l'IA.
-
-### 🏗️ Architecture
-Le système est construit sur une architecture modulaire "Secteur", assurant une séparation des préoccupations.
-
-| Module | Responsabilité | Pile Technologique |
-| :--- | :--- | :--- |
-| **RATISS Core** | Orchestration & Logique | Python, Scipy |
-| **Cypher ODV** | Validation Médicale & Anti-Hallucination | LLM, Heuristiques Personnalisées |
-| **TopoZK** | Intégrité des Données & Scalabilité | Preuves Zero-Knowledge |
-| **Planetary Solver** | Optimisation Globale (Compression Topologique) | UMAP, KD-Trees, MST, k-NN |
-
-### 📸 Visuels & Preuves
-| Architecture RATISS | Topologie Complexe |
-| :---: | :---: |
-| ![Architecture](./assets/ratiss_v2_architecture.jpg) | ![Topologie](./assets/ratiss_v2_topology.jpg) |
-
-| Interface Chat UI | Analyse de Protéines (p53 Tetramer) |
-| :---: | :---: |
-| ![Chat UI](./assets/ratiss_v2_chat_ui.PNG) | ![Protéine](./assets/Figure_1_Tetramer.png) |
-
----
-
-## 📚 Recherche & Publications
-
-### 2026
-- **J. Evina**, *Preuves Physiques et Certification ZK-STARK de la Théorie de la Tryperposition : Une Validation Hybride QPU, Topologique et Cryptographique*, Preprint, Juillet 2026.
-
-### Thématiques de recherche
-- Physique des systèmes complexes | Émergence & thermodynamique hors équilibre
-- Ponts quantique-classique-information | Tryperposition & abscisse stable
-- Élimination des hallucinations des LLM par contraintes physiques formelles
-- Certification cryptographique de résultats scientifiques (ZK-STARK)
-- Topologie computationnelle & homologie persistante appliquée
-- P vs NP — Approches topologiques et quantiques
+### Cryptographie post-quantique (VOLT v2.1)
+47 GB/s chiffrement, résistance side-channel (|t| < 0.25 sur 70 M de traces), analyse Kyber768.
 
 ---
 
 ## 📊 Statistiques GitHub
 
-![Stats de Jonathan](https://github-readme-stats.vercel.app/api?username=bridejackson137-svg&show_icons=true&theme=radical)
-![Top Langages](https://github-readme-stats.vercel.app/api/top-langs/?username=bridejackson137-svg&layout=compact&theme=radical)
+![Stats](https://github-readme-stats.vercel.app/api?username=evinajonathan13-max&show_icons=true&theme=radical)
+![Langages](https://github-readme-stats.vercel.app/api/top-langs/?username=evinajonathan13-max&layout=compact&theme=radical)
+
+> Compte secondaire (modules spécialisés antérieurs) : [`bridejackson137-svg`](https://github.com/bridejackson137-svg)
 
 ---
 
-## 🆔 Identifiant ORCID
+## 🛠️ Compétences
 
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0000--4092--5313-green?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0000-4092-5313)
-
-**ORCID :** [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313)
-
----
-
-## 📫 Contact & Liens
-
-- **Email**: [evinajonathan13@gmail.com]
-- **X/Twitter**: [@Jonhywinwood13]
-- **LinkedIn**: [https://www.linkedin.com/in/jonathan-evina-quantum?utm_source=share_via&utm_content=profile&utm_medium=member_android]
-- **ORCID**: [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313)
-- **Calendly**: [Sous demande]
+- **Physique quantique** : diagonalisation exacte (Lanczos, t-J/Hubbard), QPU IBM (Heavy-Hex 127q) + Quandela (photonique), Qiskit/PennyLane/Perceval
+- **Topologie computationnelle** : homologie persistante (GUDHI), Ricci Flow, théorie des graphes
+- **Cryptographie** : ZK-STARK (RISC Zero), chaînes de confiance (SHA256, BLAKE3), post-quantique (VOLT, Kyber)
+- **IA agentique** : orchestration multi-agents, anti-hallucination, contraintes physiques formelles
+- **Langages** : Python (expert), LaTeX, Shell, Rust/Solidity (notions), Cypher
+- **Maths** : topologie, théorie de la complexité (P vs NP)
 
 ---
 
-## 🖥️ Infrastructure Actuelle
+## 🖥️ Infrastructure
 
 | Composant | Détail |
-|-----------|--------|
-| Station de travail | Laptop AMD Ryzen 5 2500U · 8 Go RAM |
+|---|---|
+| Station | Laptop AMD Ryzen 5 2500U · 8 Go RAM |
 | Cloud QPU | IBM Quantum (Brisbane 127Q) · Quandela Cloud (Ascella) |
-| Cloud GPU | Google Colab · Kaggle Notebooks |
-| Contrôle de version | Git · GitHub |
-| Publications | LaTeX · OSF Preprints · HAL |
+| Cloud GPU | Google Colab · Kaggle |
+| Publication | LaTeX · OSF Preprints |
+
+---
+
+## 📫 Contact
+
+- 📧 [evinajonathan13@gmail.com](mailto:evinajonathan13@gmail.com)
+- 🐦 X/Twitter : [@Jonhywinwood13](https://twitter.com/Jonhywinwood13)
+- 💼 [LinkedIn](https://www.linkedin.com/in/jonathan-evina-quantum)
+- 🔬 ORCID : [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313)
+
+---
+
+## 📚 Publication
+
+- **J. Evina**, *La Loi de Cohérence Topologique : un invariant informationnel mesurable sur QPU*, 2026. DOI [10.17605/OSF.IO/6JZMB](https://doi.org/10.17605/OSF.IO/6JZMB)
+- **J. Evina**, *Preuves physiques et certification ZK-STARK de la théorie de la Tryperposition*, 2026. DOI [10.17605/OSF.IO/U4AEK](https://doi.org/10.17605/OSF.IO/U4AEK)
+- **J. Evina**, *Panthéon 20x : 20 mutants p53 sur QPU*, 2026. DOI [10.17605/OSF.IO/4867H](https://doi.org/10.17605/OSF.IO/4867H)
+
+---
+
+*© 2026 JOHNKING0 & Jonathan Evina. Loi LCT figée. Le code est la preuve ultime de la pensée.*
