@@ -3,6 +3,7 @@
 **Jonathan Evina**
 ORCID : 0009-0000-4092-5313
 RATISS Labs / Cypher ODV · Yaoundé, Cameroun
+DOI : [10.17605/OSF.IO/WF7QM](https://doi.org/10.17605/OSF.IO/WF7QM)
 *Preprint — Août 2026*
 
 ---
