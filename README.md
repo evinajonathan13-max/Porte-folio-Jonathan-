@@ -50,7 +50,11 @@ Tout mon travail est réparti sur deux comptes GitHub. Voici où aller pour quoi
 | **ratiss-aeon-agent** | Agent AEON (UI React/FastAPI + cerveau) | [repo](https://github.com/evinajonathan13-max/ratiss-aeon-agent) |
 | **Naomi-Ia-** | Assistant IA (Naomi) | [repo](https://github.com/evinajonathan13-max/Naomi-Ia-) |
 
-> ℹ️ Les dépôts marqués *privé* contiennent la propriété intellectuelle du cerveau RATISS. Le code scientifique reproductible est dans `scientist-research-` (public) et le moteur TTF est clonable sur demande.
+> 🔐 Les dépôts marqués *privé* contiennent la propriété intellectuelle du cerveau
+> RATISS — ils sont **souverains mais vérifiables** : accès sur demande pour audit
+> scientifique à [evinajonathan13@gmail.com](mailto:evinajonathan13@gmail.com).
+> Le code scientifique reproductible est public dans `scientist-research-`
+> (13 figures, tests CPU, Job IDs vérifiables).
 
 ### Compte secondaire : [`bridejackson137-svg`](https://github.com/bridejackson137-svg)
 
