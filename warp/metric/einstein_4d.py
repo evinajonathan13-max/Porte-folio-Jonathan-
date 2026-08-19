@@ -229,6 +229,7 @@ def lambda_lct_tensor(ansatz: str = "kinetic",
         P_field = sp.Function("P")(x, y, z)   # P_sig interpolée
 
     g = metric_tensor()
+    g_inv = sp.simplify(g.inv())
     lam = sp.zeros(N)
 
     if ansatz == "kinetic":
@@ -239,7 +240,6 @@ def lambda_lct_tensor(ansatz: str = "kinetic",
                 lam[mu, nu] = -kappa * dPmu * dPnu
     elif ansatz == "local_cc":
         # □P = g^μν ∇_μ∇_ν P  (approximation des dérivées secondes covariantes ≈ partielles)
-        g_inv = g.inv()
         boxP = 0
         for mu in range(N):
             for nu in range(N):
@@ -251,6 +251,19 @@ def lambda_lct_tensor(ansatz: str = "kinetic",
         for mu in range(N):
             for nu in range(N):
                 lam[mu, nu] = kappa * P_field * g[mu, nu]
+    elif ansatz == "canonical":
+        # Tenseur énergie-impulsion d'un champ scalaire CANONIQUE :
+        #   Λ_μν = κ [∇_μP ∇_νP - ½ g_μν (∇P)²]
+        # Pour P stationnaire : Λ_00 = ½(1-v²f²)(∇P)²·κ > 0 → COMPENSE T_00 < 0.
+        # Physiquement sain (pas un ghost) : énergie cinétique positive.
+        gpn2 = 0
+        for a in range(N):
+            for b in range(N):
+                gpn2 += g_inv[a, b] * sp.diff(P_field, coords[a]) * sp.diff(P_field, coords[b])
+        for mu in range(N):
+            for nu in range(N):
+                lam[mu, nu] = kappa * (sp.diff(P_field, coords[mu]) * sp.diff(P_field, coords[nu])
+                                        - sp.Rational(1, 2) * g[mu, nu] * gpn2)
     else:
         raise ValueError(ansatz)
     return sp.simplify(lam)

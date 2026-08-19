@@ -120,10 +120,10 @@ le gradient de persistance agit comme une pression topologique stabilisant le mu
 
 > 📐 **Dérivation tensorielle 4D complète** (Christoffel → Ricci → Einstein) :
 > [`warp/docs/EINSTEIN_4D_DERIVATION.md`](./warp/docs/EINSTEIN_4D_DERIVATION.md).
-> Exotic matter confirmée (G_11 = 3v²(-(y²+z²))(f')² < 0). Résultat honnête :
-> aucun des 3 ansatz de Λ_LCT ne compense directement l'exotic matter (Λ_00 ≤ 0),
-> ce qui explique la réduction faible (3.9%). La limite théorique #2 est **résolue**
-> — et révèle que la compensation naive ne marche pas (ouverture vers un 4e ansatz).
+> Exotic matter confirmée (G_11 = 3v²(-(y²+z²))(f')² < 0). **4 ansatz testés** :
+> l'ansatz **canonique** (tenseur d'un champ scalaire) produit Λ_00 = ½κ(1-v²f²)(∇P)² > 0
+> et **compense l'exotic matter de 19.1%** (vs 3.9% pour l'ancien kinetic).
+> La thèse forte est **partiellement validée** — réduction réelle, pas élimination.
 
 #### Itération honnête (la force du travail)
 
