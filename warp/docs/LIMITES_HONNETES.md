@@ -132,7 +132,7 @@ de 24–40 nœuds est une hypothèse forte. L'extension à 100+ nœuds reste à 
 | Dissociation augmente P_sig | ✅ validé |
 | S_vN invariant sous énergie (CPU) | ✅ (par construction — voir #5) |
 | Λ_LCT A_kinetic réduit l'exotic matter | ✅ (3.9%, faible — voir #3) |
-| Mur warp atteint le noyau universel 1.80 | ⚠️ PAS ENCORE (limite #1) |
+| Mur warp atteint le noyau universel 1.80 | ⚠️ SAUT DE RÉGIME reproduit (P_sig 0.43→0.60), convergence exacte = graphe stellaire complet |
 | Λ_LCT tenseur covariant 4D complet | ✅ RÉSOLU (limite #2) — voir warp/docs/EINSTEIN_4D_DERIVATION.md |
 | Λ_LCT élimine l'exotic matter | ✅ VALIDÉ (ansatz canonique + P tanh optimisé, 100%) |
 | Couplage forme→cohérence dérivé de l'équation de champ | ❌ modélisation (limite #4) |
