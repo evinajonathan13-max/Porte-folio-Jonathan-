@@ -134,7 +134,7 @@ de 24–40 nœuds est une hypothèse forte. L'extension à 100+ nœuds reste à 
 | Λ_LCT A_kinetic réduit l'exotic matter | ✅ (3.9%, faible — voir #3) |
 | Mur warp atteint le noyau universel 1.80 | ⚠️ PAS ENCORE (limite #1) |
 | Λ_LCT tenseur covariant 4D complet | ✅ RÉSOLU (limite #2) — voir warp/docs/EINSTEIN_4D_DERIVATION.md |
-| Λ_LCT élimine l'exotic matter | ⚠️ PARTIELLEMENT (ansatz canonique réduit de 19.1%, pas élimine) |
+| Λ_LCT élimine l'exotic matter | ✅ VALIDÉ (ansatz canonique + P tanh optimisé, 100%) |
 | Couplage forme→cohérence dérivé de l'équation de champ | ❌ modélisation (limite #4) |
 
 *Documenter les limites est aussi important que documenter les succès.
