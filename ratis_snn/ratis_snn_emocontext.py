@@ -330,6 +330,6 @@ if __name__ == "__main__":
             print(f"Fichier EmoContext introuvable. Place train.txt à {local_path}")
             sys.exit(1)
 
-    net, acc = train_emocontext(local_path, max_samples=200, epochs=15,
-                                 eta=0.8, n_steps=8, hidden=32, vocab_size=16)
+    net, acc = train_emocontext(local_path, max_samples=200, epochs=30,
+                                 eta=1.0, n_steps=10, hidden=32, vocab_size=16)
     print(f"\n✅ RATISS-Snn temporel sur EmoContext : {acc:.1%} (sans backprop)")
