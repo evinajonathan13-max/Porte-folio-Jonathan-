@@ -83,7 +83,7 @@ class LCTSynapticLayer(nn.Module):
             spk = spk[0]
         return spk, z
 
-    def lct_update(self, x, spk, z, phi, C, P_sig):
+    def lct_update(self, x, spk, z, phi, C, P_sig, target_neuron=None, reward=1.0):
         """Applique la règle LCT à 3 facteurs : ΔW = η · φ · P_sig · C.
 
         Pas de backprop. Mise à jour directe des poids.
@@ -91,20 +91,27 @@ class LCTSynapticLayer(nn.Module):
           spk   : activité post-synaptique (spikes)     (Facteur 1b)
           P_sig : persistance topologique (eligibility) (Facteur 2)
           phi·C : modulation globale                     (Facteur 3)
+
+        target_neuron : si fourni (couche de sortie), teacher forcing :
+          on renforce/inhibe uniquement les connexions vers le neurone cible.
         """
-        # Hebbian : ΔW ∝ pre · post (activité)
-        # LCT : ΔW = η · φ · P_sig · C · (pre · post)
-        pre = x.squeeze()           # (in_features,)
-        post = spk.squeeze().float() # (out_features,)
-        # produit externe pre ⊗ post = (out, in)
-        hebbian = torch.outer(post, pre)
-        # règle LCT à 3 facteurs
-        delta_W = self.eta * phi * P_sig * C * hebbian
-        # mise à jour manuelle (pas de gradient) + bornage des poids
+        pre = x.squeeze()
+        post = spk.squeeze().float()
+        if target_neuron is not None:
+            # teacher forcing : seul le neurone cible apprend
+            post_teacher = torch.zeros(self.out_features)
+            post_teacher[target_neuron] = 1.0 if reward > 0 else -0.5
+            hebbian = torch.outer(post_teacher, pre)
+            sign = 1.0 if reward > 0 else -1.0
+            delta_W = self.eta * abs(phi) * P_sig * abs(C) * abs(hebbian) * sign
+        else:
+            # Hebbian normal (couche cachée)
+            hebbian = torch.outer(post, pre)
+            delta_W = self.eta * phi * P_sig * C * hebbian
+        # mise à jour manuelle + clip
         with torch.no_grad():
             self.W += delta_W
-            # normalisation L2 par ligne (stabilité, comme un neurone)
-            self.W /= (self.W.norm(dim=1, keepdim=True) + 1e-6)
+            self.W.clamp_(-3.0, 3.0)
         return delta_W
 
 
@@ -196,9 +203,11 @@ class RATISSSnn(nn.Module):
         spk1, _ = self.layer1(x)
         spk2, _ = self.layer2(spk1)
         # mise à jour LCT à 3 facteurs
-        # on passe la modulation combinée comme "phi" dans lct_update
+        # couche cachée : Hebbian normal (modulation combinée)
         dW1 = self.layer1.lct_update(x, spk1, z1, modulation, 1.0, P_sig1)
-        dW2 = self.layer2.lct_update(spk1, spk2, z2, modulation, 1.0, P_sig2)
+        # couche de sortie : teacher forcing (neurone cible + récompense)
+        dW2 = self.layer2.lct_update(spk1, spk2, z2, modulation, 1.0, P_sig2,
+                                      target_neuron=int(target), reward=reward)
         acc = correct
         return acc, P_sig1, P_sig2, dW1, dW2
 
