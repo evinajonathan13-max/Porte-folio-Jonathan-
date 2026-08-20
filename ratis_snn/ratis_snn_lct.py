@@ -52,7 +52,7 @@ class LCTSynapticLayer(nn.Module):
     """
 
     def __init__(self, in_features, out_features, eta=0.5, beta=0.9,
-                 threshold=0.3, max_edge=3.0, seed=42):
+                 threshold=0.3, max_edge=3.0, seed=42, inhibition=False):
         super().__init__()
         torch.manual_seed(seed)
         self.in_features = in_features
@@ -64,7 +64,9 @@ class LCTSynapticLayer(nn.Module):
         self.W = nn.Parameter(torch.randn(out_features, in_features) * 0.3,
                                requires_grad=False)
         # LIF neuron de snnTorch (Facteur 1 : activité pré/post-synaptique)
-        self.lif = snn.Leaky(beta=beta, threshold=threshold, init_hidden=True)
+        # inhibition=True → winner-take-all (seul le neurone le plus activé spike)
+        self.lif = snn.Leaky(beta=beta, threshold=threshold, init_hidden=True,
+                              inhibition=inhibition)
         # membrane init
         self.mem = None
 
@@ -99,11 +101,17 @@ class LCTSynapticLayer(nn.Module):
         post = spk.squeeze().float()
         if target_neuron is not None:
             # teacher forcing : seul le neurone cible apprend
+            # On force un BIAS positif vers le neurone cible (pour qu'il spike)
             post_teacher = torch.zeros(self.out_features)
             post_teacher[target_neuron] = 1.0 if reward > 0 else -0.5
             hebbian = torch.outer(post_teacher, pre)
             sign = 1.0 if reward > 0 else -1.0
             delta_W = self.eta * abs(phi) * P_sig * abs(C) * abs(hebbian) * sign
+            # aussi : bias direct sur le neurone cible (pour qu'il spike)
+            # on ajoute un petit push sur la diagonale (self-connection)
+            bias_push = torch.zeros_like(self.W)
+            bias_push[target_neuron, :] = pre * 0.1 * sign
+            delta_W += bias_push
         else:
             # Hebbian normal (couche cachée)
             hebbian = torch.outer(post, pre)
@@ -161,7 +169,9 @@ class RATISSSnn(nn.Module):
         super().__init__()
         self.n_steps = n_steps
         self.layer1 = LCTSynapticLayer(in_features, hidden, eta=eta, seed=seed)
-        self.layer2 = LCTSynapticLayer(hidden, out_features, eta=eta, seed=seed+1)
+        # couche de sortie avec INHIBITION LATÉRALE (winner-take-all)
+        self.layer2 = LCTSynapticLayer(hidden, out_features, eta=eta, seed=seed+1,
+                                        inhibition=True)
 
     def reset(self):
         self.layer1.reset_mem()
@@ -193,7 +203,8 @@ class RATISSSnn(nn.Module):
         pred = out.argmax(dim=-1)
         correct = (pred == target).float().item()
         # signal de récompense (neuromodulateur) : +1 si bon, -1 si faux
-        reward = 1.0 if correct else -0.3
+        # punition plus forte pour forcer la séparation des classes qui se chevauchent
+        reward = 1.0 if correct else -1.0
         # Facteur 3 combiné : η est dans la couche, la modulation = φ · C · reward
         modulation = phi * C * reward
         # P_sig = eligibility trace topologique (Facteur 2)
@@ -202,11 +213,15 @@ class RATISSSnn(nn.Module):
         # activité pré/post pour Hebbian (Facteur 1)
         spk1, _ = self.layer1(x)
         spk2, _ = self.layer2(spk1)
+        # TEACHER FORCING : pendant l'entraînement, on force le neurone cible
+        # à être "actif" (même s'il ne spike pas), pour que le Hebbian s'applique
+        spk2_teacher = spk2.clone()
+        spk2_teacher[0, int(target)] = 1.0  # force le neurone cible actif
         # mise à jour LCT à 3 facteurs
         # couche cachée : Hebbian normal (modulation combinée)
         dW1 = self.layer1.lct_update(x, spk1, z1, modulation, 1.0, P_sig1)
         # couche de sortie : teacher forcing (neurone cible + récompense)
-        dW2 = self.layer2.lct_update(spk1, spk2, z2, modulation, 1.0, P_sig2,
+        dW2 = self.layer2.lct_update(spk1, spk2_teacher, z2, modulation, 1.0, P_sig2,
                                       target_neuron=int(target), reward=reward)
         acc = correct
         return acc, P_sig1, P_sig2, dW1, dW2
