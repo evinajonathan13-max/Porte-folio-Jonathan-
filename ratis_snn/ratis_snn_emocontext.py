@@ -26,8 +26,23 @@ import torch
 import torch.nn as nn
 import snntorch as snn
 
+# brancher les modules RATISS (topo_tokenizer + emocontext_loader)
+_RATISS_MODS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ratis_modules")
+if _RATISS_MODS not in sys.path:
+    sys.path.insert(0, _RATISS_MODS)
+_AEON = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "RATISS-ODV-AEON")
+if os.path.exists(_AEON) and _AEON not in sys.path:
+    sys.path.insert(0, os.path.abspath(_AEON))
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from ratis_snn_lct import LCTSynapticLayer, compute_p_sig_eligibility
+
+# importer le topo_tokenizer (embedding topologique, pas bag-of-words)
+try:
+    from topo_tokenizer import topo_signature
+    HAVE_TOPO = True
+except Exception:
+    HAVE_TOPO = False
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 1. CHARGEMENT + ENCODAGE EMOCONTEXT
@@ -68,15 +83,21 @@ def load_emocontext(filepath, max_samples=500, vocab_size=400):
             word_freq.update(words)
     vocab = {w: i for i, (w, _) in enumerate(word_freq.most_common(vocab_size))}
 
-    # encoder chaque tour en bag-of-words (vecteur dense normalisé)
+    # encoder chaque tour en embedding TOPOLOGIQUE (pas bag-of-words)
+    # topo_signature transforme un mot en vecteur topologique (P_sig, betti, stats)
+    # on pool les signatures des mots d'un tour → embedding du tour
     def encode_turn(turn_text):
         words = re.findall(r"[a-zA-Z]+", turn_text.lower())
-        vec = np.zeros(len(vocab))
-        for w in words:
-            if w in vocab:
-                vec[vocab[w]] += 1.0
-        norm = np.linalg.norm(vec)
-        return vec / max(norm, 1.0)
+        if not words or not HAVE_TOPO:
+            # fallback : hash simple
+            rng = np.random.default_rng(hash(turn_text) & 0xFFFFFFFF)
+            return rng.standard_normal(vocab_size).astype(np.float32)
+        sigs = np.array([topo_signature(w, dim=vocab_size) for w in words])
+        # pool : moyenne pondérée par la norme (mots saillants pèsent plus)
+        norms = np.linalg.norm(sigs, axis=1, keepdims=True)
+        norms = np.maximum(norms, 1e-6)
+        pooled = (sigs * norms).sum(axis=0) / (norms.sum() + 1e-6)
+        return pooled.astype(np.float32)
 
     dialogues = []
     labels = []
@@ -309,6 +330,6 @@ if __name__ == "__main__":
             print(f"Fichier EmoContext introuvable. Place train.txt à {local_path}")
             sys.exit(1)
 
-    net, acc = train_emocontext(local_path, max_samples=800, epochs=20,
-                                 eta=0.8, n_steps=12, hidden=32, vocab_size=400)
+    net, acc = train_emocontext(local_path, max_samples=200, epochs=15,
+                                 eta=0.8, n_steps=8, hidden=32, vocab_size=16)
     print(f"\n✅ RATISS-Snn temporel sur EmoContext : {acc:.1%} (sans backprop)")
