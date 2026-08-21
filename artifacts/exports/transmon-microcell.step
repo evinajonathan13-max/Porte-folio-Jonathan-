@@ -1,0 +1,28 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('Quantum Circuit Studio conceptual layer stack'),'2;1');
+FILE_NAME('transmon-microcell_conceptual_layer_stack.step','2026-08-21T21:25:14.581Z',('Quantum Circuit Studio'),(''),'','','');
+FILE_SCHEMA(('AUTOMOTIVE_DESIGN_CC2'));
+ENDSEC;
+DATA;
+/* CONCEPTUAL GEOMETRY ONLY — NOT A FABRICATION, PDK OR TOLERANCED MECHANICAL MODEL */
+/* #1: q0_metal | layer=metal | center=(-11,-1,0) | dimensions=(8,5,0.35) */
+#1=DESCRIPTIVE_REPRESENTATION_ITEM('q0_metal: conceptual metal layer proxy');
+/* #2: q0_josephson | layer=josephson | center=(-11,-1,0.64) | dimensions=(3.2,3.2,0.22) */
+#2=DESCRIPTIVE_REPRESENTATION_ITEM('q0_josephson: conceptual josephson layer proxy');
+/* #3: q1_metal | layer=metal | center=(9,-1,0) | dimensions=(8,5,0.35) */
+#3=DESCRIPTIVE_REPRESENTATION_ITEM('q1_metal: conceptual metal layer proxy');
+/* #4: q1_josephson | layer=josephson | center=(9,-1,0.64) | dimensions=(3.2,3.2,0.22) */
+#4=DESCRIPTIVE_REPRESENTATION_ITEM('q1_josephson: conceptual josephson layer proxy');
+/* #5: c0_metal | layer=metal | center=(-1,-1,0) | dimensions=(8,5,0.35) */
+#5=DESCRIPTIVE_REPRESENTATION_ITEM('c0_metal: conceptual metal layer proxy');
+/* #6: c0_josephson | layer=josephson | center=(-1,-1,0.64) | dimensions=(3.2,3.2,0.22) */
+#6=DESCRIPTIVE_REPRESENTATION_ITEM('c0_josephson: conceptual josephson layer proxy');
+/* #7: r0_resonator | layer=resonator | center=(-11,13,1.28) | dimensions=(12,2.4,0.3) */
+#7=DESCRIPTIVE_REPRESENTATION_ITEM('r0_resonator: conceptual resonator layer proxy');
+/* #8: r1_resonator | layer=resonator | center=(9,13,1.28) | dimensions=(12,2.4,0.3) */
+#8=DESCRIPTIVE_REPRESENTATION_ITEM('r1_resonator: conceptual resonator layer proxy');
+/* #9: fl0_control | layer=control | center=(-1,17,1.92) | dimensions=(10,1.8,0.26) */
+#9=DESCRIPTIVE_REPRESENTATION_ITEM('fl0_control: conceptual control layer proxy');
+ENDSEC;
+END-ISO-10303-21;

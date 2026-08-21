@@ -1,0 +1,768 @@
+solid transmon-microcell_conceptual_layer_stack
+  // CONCEPTUAL GEOMETRY ONLY — NOT A FABRICATION, PDK OR TOLERANCED MECHANICAL MODEL
+  // q0_metal · metal layer
+  facet normal 0 0 -1
+    outer loop
+      vertex -15 -3.5 0
+      vertex -7 1.5 0
+      vertex -7 -3.5 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -15 -3.5 0
+      vertex -15 1.5 0
+      vertex -7 1.5 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -15 -3.5 0.35
+      vertex -7 -3.5 0.35
+      vertex -7 1.5 0.35
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -15 -3.5 0.35
+      vertex -7 1.5 0.35
+      vertex -15 1.5 0.35
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -15 -3.5 0
+      vertex -7 -3.5 0
+      vertex -7 -3.5 0.35
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -15 -3.5 0
+      vertex -7 -3.5 0.35
+      vertex -15 -3.5 0.35
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex -7 -3.5 0
+      vertex -7 1.5 0
+      vertex -7 1.5 0.35
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex -7 -3.5 0
+      vertex -7 1.5 0.35
+      vertex -7 -3.5 0.35
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -7 1.5 0
+      vertex -15 1.5 0
+      vertex -15 1.5 0.35
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -7 1.5 0
+      vertex -15 1.5 0.35
+      vertex -7 1.5 0.35
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -15 1.5 0
+      vertex -15 -3.5 0
+      vertex -15 -3.5 0.35
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -15 1.5 0
+      vertex -15 -3.5 0.35
+      vertex -15 1.5 0.35
+    endloop
+  endfacet
+  // q0_josephson · josephson layer
+  facet normal 0 0 -1
+    outer loop
+      vertex -12.6 -2.6 0.64
+      vertex -9.4 0.6000000000000001 0.64
+      vertex -9.4 -2.6 0.64
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -12.6 -2.6 0.64
+      vertex -12.6 0.6000000000000001 0.64
+      vertex -9.4 0.6000000000000001 0.64
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -12.6 -2.6 0.86
+      vertex -9.4 -2.6 0.86
+      vertex -9.4 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -12.6 -2.6 0.86
+      vertex -9.4 0.6000000000000001 0.86
+      vertex -12.6 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -12.6 -2.6 0.64
+      vertex -9.4 -2.6 0.64
+      vertex -9.4 -2.6 0.86
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -12.6 -2.6 0.64
+      vertex -9.4 -2.6 0.86
+      vertex -12.6 -2.6 0.86
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex -9.4 -2.6 0.64
+      vertex -9.4 0.6000000000000001 0.64
+      vertex -9.4 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex -9.4 -2.6 0.64
+      vertex -9.4 0.6000000000000001 0.86
+      vertex -9.4 -2.6 0.86
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -9.4 0.6000000000000001 0.64
+      vertex -12.6 0.6000000000000001 0.64
+      vertex -12.6 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -9.4 0.6000000000000001 0.64
+      vertex -12.6 0.6000000000000001 0.86
+      vertex -9.4 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -12.6 0.6000000000000001 0.64
+      vertex -12.6 -2.6 0.64
+      vertex -12.6 -2.6 0.86
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -12.6 0.6000000000000001 0.64
+      vertex -12.6 -2.6 0.86
+      vertex -12.6 0.6000000000000001 0.86
+    endloop
+  endfacet
+  // q1_metal · metal layer
+  facet normal 0 0 -1
+    outer loop
+      vertex 5 -3.5 0
+      vertex 13 1.5 0
+      vertex 13 -3.5 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 5 -3.5 0
+      vertex 5 1.5 0
+      vertex 13 1.5 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 5 -3.5 0.35
+      vertex 13 -3.5 0.35
+      vertex 13 1.5 0.35
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 5 -3.5 0.35
+      vertex 13 1.5 0.35
+      vertex 5 1.5 0.35
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 5 -3.5 0
+      vertex 13 -3.5 0
+      vertex 13 -3.5 0.35
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 5 -3.5 0
+      vertex 13 -3.5 0.35
+      vertex 5 -3.5 0.35
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 13 -3.5 0
+      vertex 13 1.5 0
+      vertex 13 1.5 0.35
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 13 -3.5 0
+      vertex 13 1.5 0.35
+      vertex 13 -3.5 0.35
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 13 1.5 0
+      vertex 5 1.5 0
+      vertex 5 1.5 0.35
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 13 1.5 0
+      vertex 5 1.5 0.35
+      vertex 13 1.5 0.35
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 5 1.5 0
+      vertex 5 -3.5 0
+      vertex 5 -3.5 0.35
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 5 1.5 0
+      vertex 5 -3.5 0.35
+      vertex 5 1.5 0.35
+    endloop
+  endfacet
+  // q1_josephson · josephson layer
+  facet normal 0 0 -1
+    outer loop
+      vertex 7.4 -2.6 0.64
+      vertex 10.6 0.6000000000000001 0.64
+      vertex 10.6 -2.6 0.64
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 7.4 -2.6 0.64
+      vertex 7.4 0.6000000000000001 0.64
+      vertex 10.6 0.6000000000000001 0.64
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 7.4 -2.6 0.86
+      vertex 10.6 -2.6 0.86
+      vertex 10.6 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 7.4 -2.6 0.86
+      vertex 10.6 0.6000000000000001 0.86
+      vertex 7.4 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 7.4 -2.6 0.64
+      vertex 10.6 -2.6 0.64
+      vertex 10.6 -2.6 0.86
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 7.4 -2.6 0.64
+      vertex 10.6 -2.6 0.86
+      vertex 7.4 -2.6 0.86
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 10.6 -2.6 0.64
+      vertex 10.6 0.6000000000000001 0.64
+      vertex 10.6 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 10.6 -2.6 0.64
+      vertex 10.6 0.6000000000000001 0.86
+      vertex 10.6 -2.6 0.86
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 10.6 0.6000000000000001 0.64
+      vertex 7.4 0.6000000000000001 0.64
+      vertex 7.4 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 10.6 0.6000000000000001 0.64
+      vertex 7.4 0.6000000000000001 0.86
+      vertex 10.6 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 7.4 0.6000000000000001 0.64
+      vertex 7.4 -2.6 0.64
+      vertex 7.4 -2.6 0.86
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 7.4 0.6000000000000001 0.64
+      vertex 7.4 -2.6 0.86
+      vertex 7.4 0.6000000000000001 0.86
+    endloop
+  endfacet
+  // c0_metal · metal layer
+  facet normal 0 0 -1
+    outer loop
+      vertex -5 -3.5 0
+      vertex 3 1.5 0
+      vertex 3 -3.5 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -5 -3.5 0
+      vertex -5 1.5 0
+      vertex 3 1.5 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -5 -3.5 0.35
+      vertex 3 -3.5 0.35
+      vertex 3 1.5 0.35
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -5 -3.5 0.35
+      vertex 3 1.5 0.35
+      vertex -5 1.5 0.35
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -5 -3.5 0
+      vertex 3 -3.5 0
+      vertex 3 -3.5 0.35
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -5 -3.5 0
+      vertex 3 -3.5 0.35
+      vertex -5 -3.5 0.35
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 3 -3.5 0
+      vertex 3 1.5 0
+      vertex 3 1.5 0.35
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 3 -3.5 0
+      vertex 3 1.5 0.35
+      vertex 3 -3.5 0.35
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 3 1.5 0
+      vertex -5 1.5 0
+      vertex -5 1.5 0.35
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 3 1.5 0
+      vertex -5 1.5 0.35
+      vertex 3 1.5 0.35
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -5 1.5 0
+      vertex -5 -3.5 0
+      vertex -5 -3.5 0.35
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -5 1.5 0
+      vertex -5 -3.5 0.35
+      vertex -5 1.5 0.35
+    endloop
+  endfacet
+  // c0_josephson · josephson layer
+  facet normal 0 0 -1
+    outer loop
+      vertex -2.6 -2.6 0.64
+      vertex 0.6000000000000001 0.6000000000000001 0.64
+      vertex 0.6000000000000001 -2.6 0.64
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -2.6 -2.6 0.64
+      vertex -2.6 0.6000000000000001 0.64
+      vertex 0.6000000000000001 0.6000000000000001 0.64
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -2.6 -2.6 0.86
+      vertex 0.6000000000000001 -2.6 0.86
+      vertex 0.6000000000000001 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -2.6 -2.6 0.86
+      vertex 0.6000000000000001 0.6000000000000001 0.86
+      vertex -2.6 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -2.6 -2.6 0.64
+      vertex 0.6000000000000001 -2.6 0.64
+      vertex 0.6000000000000001 -2.6 0.86
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -2.6 -2.6 0.64
+      vertex 0.6000000000000001 -2.6 0.86
+      vertex -2.6 -2.6 0.86
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 0.6000000000000001 -2.6 0.64
+      vertex 0.6000000000000001 0.6000000000000001 0.64
+      vertex 0.6000000000000001 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 0.6000000000000001 -2.6 0.64
+      vertex 0.6000000000000001 0.6000000000000001 0.86
+      vertex 0.6000000000000001 -2.6 0.86
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 0.6000000000000001 0.6000000000000001 0.64
+      vertex -2.6 0.6000000000000001 0.64
+      vertex -2.6 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 0.6000000000000001 0.6000000000000001 0.64
+      vertex -2.6 0.6000000000000001 0.86
+      vertex 0.6000000000000001 0.6000000000000001 0.86
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -2.6 0.6000000000000001 0.64
+      vertex -2.6 -2.6 0.64
+      vertex -2.6 -2.6 0.86
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -2.6 0.6000000000000001 0.64
+      vertex -2.6 -2.6 0.86
+      vertex -2.6 0.6000000000000001 0.86
+    endloop
+  endfacet
+  // r0_resonator · resonator layer
+  facet normal 0 0 -1
+    outer loop
+      vertex -17 11.8 1.28
+      vertex -5 14.2 1.28
+      vertex -5 11.8 1.28
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -17 11.8 1.28
+      vertex -17 14.2 1.28
+      vertex -5 14.2 1.28
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -17 11.8 1.58
+      vertex -5 11.8 1.58
+      vertex -5 14.2 1.58
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -17 11.8 1.58
+      vertex -5 14.2 1.58
+      vertex -17 14.2 1.58
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -17 11.8 1.28
+      vertex -5 11.8 1.28
+      vertex -5 11.8 1.58
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -17 11.8 1.28
+      vertex -5 11.8 1.58
+      vertex -17 11.8 1.58
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex -5 11.8 1.28
+      vertex -5 14.2 1.28
+      vertex -5 14.2 1.58
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex -5 11.8 1.28
+      vertex -5 14.2 1.58
+      vertex -5 11.8 1.58
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -5 14.2 1.28
+      vertex -17 14.2 1.28
+      vertex -17 14.2 1.58
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -5 14.2 1.28
+      vertex -17 14.2 1.58
+      vertex -5 14.2 1.58
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -17 14.2 1.28
+      vertex -17 11.8 1.28
+      vertex -17 11.8 1.58
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -17 14.2 1.28
+      vertex -17 11.8 1.58
+      vertex -17 14.2 1.58
+    endloop
+  endfacet
+  // r1_resonator · resonator layer
+  facet normal 0 0 -1
+    outer loop
+      vertex 3 11.8 1.28
+      vertex 15 14.2 1.28
+      vertex 15 11.8 1.28
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 3 11.8 1.28
+      vertex 3 14.2 1.28
+      vertex 15 14.2 1.28
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 3 11.8 1.58
+      vertex 15 11.8 1.58
+      vertex 15 14.2 1.58
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 3 11.8 1.58
+      vertex 15 14.2 1.58
+      vertex 3 14.2 1.58
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 3 11.8 1.28
+      vertex 15 11.8 1.28
+      vertex 15 11.8 1.58
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 3 11.8 1.28
+      vertex 15 11.8 1.58
+      vertex 3 11.8 1.58
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 15 11.8 1.28
+      vertex 15 14.2 1.28
+      vertex 15 14.2 1.58
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 15 11.8 1.28
+      vertex 15 14.2 1.58
+      vertex 15 11.8 1.58
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 15 14.2 1.28
+      vertex 3 14.2 1.28
+      vertex 3 14.2 1.58
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 15 14.2 1.28
+      vertex 3 14.2 1.58
+      vertex 15 14.2 1.58
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 3 14.2 1.28
+      vertex 3 11.8 1.28
+      vertex 3 11.8 1.58
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 3 14.2 1.28
+      vertex 3 11.8 1.58
+      vertex 3 14.2 1.58
+    endloop
+  endfacet
+  // fl0_control · control layer
+  facet normal 0 0 -1
+    outer loop
+      vertex -6 16.1 1.92
+      vertex 4 17.9 1.92
+      vertex 4 16.1 1.92
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -6 16.1 1.92
+      vertex -6 17.9 1.92
+      vertex 4 17.9 1.92
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -6 16.1 2.1799999999999997
+      vertex 4 16.1 2.1799999999999997
+      vertex 4 17.9 2.1799999999999997
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -6 16.1 2.1799999999999997
+      vertex 4 17.9 2.1799999999999997
+      vertex -6 17.9 2.1799999999999997
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -6 16.1 1.92
+      vertex 4 16.1 1.92
+      vertex 4 16.1 2.1799999999999997
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -6 16.1 1.92
+      vertex 4 16.1 2.1799999999999997
+      vertex -6 16.1 2.1799999999999997
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 4 16.1 1.92
+      vertex 4 17.9 1.92
+      vertex 4 17.9 2.1799999999999997
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 4 16.1 1.92
+      vertex 4 17.9 2.1799999999999997
+      vertex 4 16.1 2.1799999999999997
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 4 17.9 1.92
+      vertex -6 17.9 1.92
+      vertex -6 17.9 2.1799999999999997
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 4 17.9 1.92
+      vertex -6 17.9 2.1799999999999997
+      vertex 4 17.9 2.1799999999999997
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -6 17.9 1.92
+      vertex -6 16.1 1.92
+      vertex -6 16.1 2.1799999999999997
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -6 17.9 1.92
+      vertex -6 16.1 2.1799999999999997
+      vertex -6 17.9 2.1799999999999997
+    endloop
+  endfacet
+endsolid transmon-microcell_conceptual_layer_stack
