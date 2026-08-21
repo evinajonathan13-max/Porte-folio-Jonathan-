@@ -96,6 +96,15 @@ environnement (latence registry). Les exports ci-dessus sont produits en Node pu
 sans vite. À régénérer localement avec `pnpm install && pnpm dev` puis capture
 d'écran du Topology Lens 3D.
 
+## Optimisation (sweep max_edge × n_steps)
+
+Résultat honnête du sweep complet (mesuré de cette session) : cible 1.80 du preprint
+**non atteinte**. Le meilleur test est Étoile B (masse 2× + spin) à max_edge=2.5–3.0 →
+P_sig max = **0.976** (tous mesurés). Le sweep couvre max_edge ∈ {1.0,1.2,1.5,2.0,2.5,3.0}
+× n_steps ∈ {8,16}. Artefact : `artifacts/stellar_sweep_optimized.json`. Le puits
+topologique s'atteint à k≈2 avant que ρ échoue à la dissociation — c'est le comportement
+mesuré, pour documenté.
+
 ## Prochaine étape
 
 1. **Branchement du cache** (Ratiss-experimental-IA-) sur les circuits du studio
