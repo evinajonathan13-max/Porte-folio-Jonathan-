@@ -74,11 +74,33 @@ print('P_sig:', b.analyze_circuit_lct('demo/transmon-microcell.json'))
 
 ---
 
+## Exports du studio (générés, réels)
+
+Générés depuis `createDemoCircuit()` de Quantum Circuit Studio (`node`, zéro dépendance
+réseau) — 5 fichiers dans `artifacts/exports/` :
+
+| Export | Fichier | Contenu |
+|---|---|---|
+| OpenQASM 3 | `transmon-microcell.qasm` | scaffold logique : 2 qubits, cz q[0],q[1], mesures |
+| JSON modèle | `transmon-microcell.json` | modèle source complet (schema v0.1) |
+| STL conceptuel | `transmon-microcell.stl` | Layer Stack proxy — PAS un modèle de fabrication |
+| STEP conceptuel | `transmon-microcell.step` | même proxy, format STEP |
+| Analyse locale | `analysis.json` | validation ✅, collisions de fréquence : **[] (zéro)** |
+
+Résultat de validation du studio : « Topology check passed » (IDs uniques, liens
+valides, readout par qubit). Les exports STL/STEP portent l'avertissement explicite
+« CONCEPTUAL GEOMETRY ONLY — NOT A FABRICATION MODEL ».
+
+**Vidéo WebGL** : non générée ici — l'install npm du studio n'a pas abouti dans cet
+environnement (latence registry). Les exports ci-dessus sont produits en Node pur,
+sans vite. À régénérer localement avec `pnpm install && pnpm dev` puis capture
+d'écran du Topology Lens 3D.
+
 ## Prochaine étape
 
 1. **Branchement du cache** (Ratiss-experimental-IA-) sur les circuits du studio
-2. **Exports** : STL/STEP des Layer Stacks pour discussion de fabrication
-3. **Vidéo WebGL** : enregistrement du Topology Lens 3D sur le microcell
+2. **QASM vers QPU** : adapter le scaffold OpenQASM 3 pour un run ibm_marrakesh (quand crédits)
+3. **Vidéo WebGL** : enregistrement du Topology Lens 3D sur le microcell (en local)
 
 ---
 *Propriété intellectuelle : JOHNKING0 & Jonathan Evina (ORCID 0009-0000-4092-5313).*
