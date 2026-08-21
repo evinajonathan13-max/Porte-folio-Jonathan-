@@ -31,6 +31,9 @@ RATISS (le système agentique)
 🌐 **Site scientifique illustré (live)** : https://evinajonathan13-max.github.io/scientist-research-/
 *(13 figures, section « Pour les sceptiques », Job IDs vérifiables sur ibm.com/quantum)*
 
+🗣️ **Évolution RATISS-Net (cache → mesure honnête → parlante)** : [docs/EVOLUTION_RATIS_NET.md](docs/EVOLUTION_RATIS_NET.md)
+*(cache P_sig, sweep v4 documenté, matrice de confusion réelle, génération 4 émotions)*
+
 ---
 
 ## 🗺️ Carte des dépôts — la porte d'entrée unique
