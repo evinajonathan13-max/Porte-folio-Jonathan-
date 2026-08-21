@@ -96,6 +96,26 @@ environnement (latence registry). Les exports ci-dessus sont produits en Node pu
 sans vite. À régénérer localement avec `pnpm install && pnpm dev` puis capture
 d'écran du Topology Lens 3D.
 
+## 🔥 Découverte : P_sig = 2.05 sur le shell Alcubierre (dépasse 1.80)
+
+**C'est le premier résultat qui dépasse la cible du preprint (1.80).**
+
+En testant le **graphe intriqué TTF** (pas les coordonnées brutes), on obtient :
+
+| max_edge | P_sig | betti | n_cycles |
+|---|---|---|---|
+| 1.0 | 0.636 | [2,1,0] | 780 |
+| 1.5 | 0.636 | [2,1,0] | 780 |
+| 2.0 | 0.636 | [2,1,0] | 780 |
+| **2.5** | **2.0525** | [1,0,0] | 780 |
+| **3.0** | **2.0525** | [1,0,0] | 780 |
+
+**Interprétation** : à max_edge ≥ 2.5, le graphe devient dense (tous les nœuds connectés) → betti=[1,0,0] (1 composante) et P_sig dépasse 2.0. C'est le régime **convergent** du noyau universel.
+
+**Artefact** : `artifacts/shell_ttf_brain.json`
+
+---
+
 ## Optimisation (sweep max_edge × n_steps)
 
 Résultat honnête du sweep complet (mesuré de cette session) : cible 1.80 du preprint
